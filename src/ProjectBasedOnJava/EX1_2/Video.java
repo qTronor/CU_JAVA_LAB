@@ -1,4 +1,4 @@
-package EX2_2;
+package ProjectBasedOnJava.EX1_2;
 
 public class Video {
 

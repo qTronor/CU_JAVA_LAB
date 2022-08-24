@@ -1,4 +1,4 @@
-package EX1_1;
+package ProjectBasedOnJava.EX1_1;
 public class Employer {
     public int id;
     public String name;

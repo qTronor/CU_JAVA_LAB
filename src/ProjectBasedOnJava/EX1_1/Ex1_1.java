@@ -1,4 +1,4 @@
-package EX1_1;
+package ProjectBasedOnJava.EX1_1;
 
 
 import java.util.ArrayList;
