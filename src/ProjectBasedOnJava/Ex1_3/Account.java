@@ -8,13 +8,28 @@ public abstract class Account {
 
     public abstract double calculateInterest();
 
+    public int getValue(int sizeOfList){ //Добавить параметр для проверки на число превосходящее размер списка
+        int number = 0;
+        Scanner scan = new Scanner(System.in);
+        try {
+            number = scan.nextInt();
+            if(number < 0 || number > sizeOfList){
+                //System.out.println("Invalid Number entered. Please enter correct values.");
+                throw new Exception("Invalid Number entered. Please enter correct values.");
+            }
+        }
+        catch (Exception e){
+            System.out.println("Error occurred: " + e.getMessage());
+        }
+        return number;
+    }
     public int getValue(){
         int number = 0;
         Scanner scan = new Scanner(System.in);
         try {
             number = scan.nextInt();
             if(number < 0){
-                System.out.println("Invalid Number entered. Please enter correct values.");
+                //System.out.println("Invalid Number entered. Please enter correct values.");
                 throw new Exception("Invalid Number entered. Please enter correct values.");
             }
         }

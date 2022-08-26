@@ -6,10 +6,10 @@ public class RDAccount extends Account{
         amount  = super.getValue();
 
         System.out.println("Enter the number of days: ");
-        noOfMonths = super.getValue();
+        //noOfMonths = super.getValue();
 
         System.out.println("Enter your age: ");
-        ageOfAcHoulder = super.getValue();
+        //ageOfAcHoulder = super.getValue();
     }
 
     @Override

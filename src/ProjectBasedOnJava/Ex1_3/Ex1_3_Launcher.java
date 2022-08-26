@@ -14,8 +14,8 @@ public class Ex1_3_Launcher {
         Scanner scan = new Scanner(System.in);
         try {
             choice = scan.nextInt();
-            if(choice < 0){
-                System.out.println("Amount < 0");
+            if(choice < 0 || choice > 4){
+                System.out.println("Wrong choice");
                 return;
             }
         }
