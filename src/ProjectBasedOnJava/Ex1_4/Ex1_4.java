@@ -11,7 +11,7 @@ public class Ex1_4 {
         while(cards.size() < 4) {
             char c = scan.next().charAt(0);
             int v = scan.nextInt();
-            if(cards.containsValue(new Card(c, v)) == false) cards.put(c, new Card(c, v));
+            if(cards.containsKey(c) == false) cards.put(c, new Card(c, v));
             else continue;
         }
         for(Map.Entry<Character, Object> entry : cards.entrySet()){
