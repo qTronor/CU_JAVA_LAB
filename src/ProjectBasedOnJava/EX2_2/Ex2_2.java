@@ -1,8 +1,8 @@
-package ProjectBasedOnJava.Ex1_4;
+package ProjectBasedOnJava.EX2_2;
 
 import java.util.*;
 
-public class Ex1_4 {
+public class Ex2_2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 

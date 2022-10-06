@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Ex1_1 {
-    public static List<Employer> employers = new ArrayList();
+     public static List<Employer> employers = new ArrayList();
     public static void main(String[] args) {
         employers.add(new Employer(1001, "Ashish", "01/04/2009", 'e', "R&D", 20000, 8000, 3000));
         employers.add(new Employer(1002, "Sushma", "23/08/2012", 'c', "PM", 30000, 12000, 9000));

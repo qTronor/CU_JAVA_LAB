@@ -1,4 +1,4 @@
-package ProjectBasedOnJava.Ex1_4;
+package ProjectBasedOnJava.Ex2_1;
 
 public class Card {
 
@@ -11,6 +11,14 @@ public class Card {
     }
     @Override
     public String toString() {
-        return symbol + " " +number;
+        return symbol + " " + number;
+    }
+
+    public char getSymbol() {
+        return symbol;
+    }
+
+    public int getNumber() {
+        return number;
     }
 }
