@@ -42,12 +42,13 @@ public class Ex2_1 {
         cards.put('h', h_class);
         cards.put('c', c_class);
 
-        System.out.println("Distinct Symbols are:\n " + cards.keySet().toString());
-        System.out.println(cards.entrySet());
-
+        System.out.println("Distinct Symbols are:");
+        for(Character entry : cards.keySet()){
+            System.out.print(entry);
+        }
         for(Map.Entry<Character, List> entry : cards.entrySet()){
             List classList = entry.getValue();
-            System.out.println("Cards in " + entry.getKey() + " Symbol");
+            System.out.println("\nCards in " + entry.getKey() + " Symbol");
 
             int sumOfNumbers = 0;
             for(int i = 0; i < classList.size(); i++){
