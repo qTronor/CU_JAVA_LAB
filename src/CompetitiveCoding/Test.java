@@ -1,20 +1,21 @@
 package CompetitiveCoding;
 
 import java.awt.*;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        func();
-    }
-    static void func(){
-        String n = "Hello";
-        System.out.println(n);
-        bar(n);
-        System.out.println(n);
-    }
-    static void bar(String n){
-        n += "World";
-        System.out.println(n + 13);
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        if(((a == 0) || (a<0) && (b<0))||(a == b && b == 0)) System.out.println("no such x");
+
+        else if ((a == 0) || (-b/a < 0 && a > 0)) System.out.println("any x");
+
+        else if(((a < 0) && (-b/a > 0)) || ((a < 0) && (-b/a > 0))) System.out.println();
+        //a * Math.abs(x) + b >0
     }
 }
